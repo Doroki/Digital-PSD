@@ -136,6 +136,9 @@ html, body {
   content: '\e80f'; }
 
 /* '' */
+.service__arrow-icon:after {
+  content: '\e80e'; }
+
 /*=============================================
 =*****                                   *****=
 =*****            COMPONENTS             *****=
@@ -490,6 +493,24 @@ html, body {
     font-family: "Roboto", Arial, sans-serif;
     color: #999999;
     font-style: italic; }
+  .service__arrow-icon:after {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    position: absolute;
+    right: 15px;
+    -webkit-transition: -webkit-transform .2s linear;
+    transition: -webkit-transform .2s linear;
+    transition: transform .2s linear;
+    transition: transform .2s linear, -webkit-transform .2s linear;
+    color: #999999; }
+
+.collapsed > .service__arrow-icon:after {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: -webkit-transform .2s linear;
+  transition: -webkit-transform .2s linear;
+  transition: transform .2s linear;
+  transition: transform .2s linear, -webkit-transform .2s linear; }
 
 .comments__icon {
   color: #95e1d3;
