@@ -425,7 +425,8 @@ html, body {
 
 .wrapper--image-1 {
   background: url(../img/background/background-2.jpg);
-  position: relative; }
+  position: relative;
+  padding-top: 1px; }
 
 .wrapper--image-2 {
   background: url(../img/background/background-1.jpg); }
@@ -433,22 +434,62 @@ html, body {
 .wrapper--image-3 {
   background: url(../img/background/background-3.jpg); }
 
-.service {
+.work {
   padding: 1.5em;
   text-align: left; }
-  .service:first-of-type {
+  .work:first-of-type {
     border-bottom: 1px solid #cccccc; }
-  .service__content {
+  .work__content {
     color: #999999;
     font-size: 16px; }
-  .service__header {
+  .work__header {
     color: #000;
     font-weight: 400;
     font-size: 16px; }
-  .service__icon {
+  .work__icon {
     font-size: 2em !important;
     color: #95e1d3;
     font-size: 20px; }
+
+.service {
+  margin-top: 4em; }
+  .service__tab {
+    height: 60px;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%; }
+  .service__heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    color: #333333;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 2em; }
+    .service__heading:focus, .service__heading:hover {
+      text-decoration: none; }
+  .service__icon {
+    font-size: 22px;
+    color: #95e1d3;
+    margin-right: 1em; }
+  .service__tab-block {
+    height: 174px;
+    overflow-y: scroll;
+    font-size: 15px;
+    font-family: "Roboto", Arial, sans-serif;
+    color: #999999;
+    font-style: italic; }
 
 .comments__icon {
   color: #95e1d3;

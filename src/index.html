@@ -15,7 +15,7 @@
 
 <body>
     <header class="container-fluid header">
-        <div class="container mh-100 d-flex flex-column justify-content-between">
+        <div class="container mh-100 d-flex flex-column justify-items-between">
 
             <!-- NAVIGATION BAR -->
             <nav class="navbar navbar-toggleable-md navigation">
@@ -161,48 +161,48 @@
         <section class="container text-center article">
             <p class="article__decor">We work with</p>
             <h3 class="article__header">AMAZING SERVICES</h3>
-            <div class="row service mt-5">
+            <div class="row work mt-5">
                 <article class="col-md-4 media mt-4">
-                    <span class="d-flex mr-3 icon-camera-outline service__icon"></span>
-                    <div class="media-body service__content">
-                        <h5 class="mt-0 service__header">PHOTOGRAPHY</h5>
+                    <span class="d-flex mr-3 icon-camera-outline work__icon"></span>
+                    <div class="media-body work__content">
+                        <h5 class="mt-0 work__header">PHOTOGRAPHY</h5>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                     </div>
                 </article>
                 <article class="col-md-4 media mt-4">
-                    <span class="d-flex mr-3 icon-website service__icon"></span>
-                    <div class="media-body service__content">
-                        <h5 class="mt-0 service__header">WEB DESIGN</h5>
+                    <span class="d-flex mr-3 icon-website work__icon"></span>
+                    <div class="media-body work__content">
+                        <h5 class="mt-0 work__header">WEB DESIGN</h5>
                         Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                     </div>
                 </article>
                 <article class="col-md-4 media mt-4">
-                    <span class="d-flex mr-3 icon-network service__icon"></span>
-                    <div class="media-body service__content">
-                        <h5 class="mt-0 service__header">CREATIVITY</h5>
+                    <span class="d-flex mr-3 icon-network work__icon"></span>
+                    <div class="media-body work__content">
+                        <h5 class="mt-0 work__header">CREATIVITY</h5>
                         Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                     </div>
                 </article>
             </div>
-            <div class="row service">
+            <div class="row work">
                 <article class="col-md-4 media mt-4">
-                    <span class="d-flex mr-3 icon-book-open service__icon"></span>
-                    <div class="media-body service__content">
-                        <h5 class="mt-0 service__header">SEO</h5>
+                    <span class="d-flex mr-3 icon-book-open work__icon"></span>
+                    <div class="media-body work__content">
+                        <h5 class="mt-0 work__header">SEO</h5>
                         Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
                     </div>
                 </article>
                 <article class="col-md-4 media mt-4">
-                    <span class="d-flex mr-3 icon-home-outline service__icon"></span>
-                    <div class="media-body service__content">
-                        <h5 class="mt-0 service__header">CSS/HTML</h5>
+                    <span class="d-flex mr-3 icon-home-outline work__icon"></span>
+                    <div class="media-body work__content">
+                        <h5 class="mt-0 work__header">CSS/HTML</h5>
                         Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.
                     </div>
                 </article>
                 <article class="col-md-4 media mt-4">
-                    <span class="d-flex mr-3 icon-picture service__icon"></span>
-                    <div class="media-body service__content">
-                        <h5 class="mt-0 service__header">CSS/HTML</h5>
+                    <span class="d-flex mr-3 icon-picture work__icon"></span>
+                    <div class="media-body work__content">
+                        <h5 class="mt-0 work__header">CSS/HTML</h5>
                         Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                     </div>
                 </article>
@@ -218,7 +218,7 @@
             </article>
         </section>
 
-        <!-- Section Design -->
+        <!-- Section Service -->
         <section class="container text-center article">
             <p class="article__decor">Service</p>
             <h3 class="article__header">WHAT WE DO</h3>
@@ -226,12 +226,63 @@
                 magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 consequat.
             </p>
-            <div>
-                <img src="#" alt="">
-                <img src="#" alt="">
-                <img src="#" alt="">
+            <div class="row service">
+                <div class="col-md-6">
+                    <img class="img-fluid" src="img/images/what-we-do.jpg" alt="">
+                </div>
+
+                <div class="col-md-6" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="card">
+                      <div class="card-header service__tab" role="tab" id="headingOne">
+                        <h5 class="mb-0  w-100 h-100">
+                          <a class="collapsed service__heading" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <span class="service__icon icon-picture"></span> 
+                            PHOTOGRAPHY
+                          </a>
+                        </h5>
+                      </div>
+                  
+                      <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="card-block service__tab-block">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header service__tab" role="tab" id="headingTwo">
+                        <h5 class="mb-0  w-100 h-100">
+                          <a class="collapsed service__heading" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <span class="service__icon icon-vector"></span>
+                            <span>CREATIVITY</span>
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="card-block service__tab-block">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header service__tab" role="tab" id="headingThree">
+                        <h5 class="mb-0 w-100 h-100">
+                          <a class="collapsed service__heading" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <span class="service__icon icon-network"></span>
+                            WEB DESIGN
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="card-block service__tab-block">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
         </section>
+
+        <!-- Section Comments -->
         <section class="container-fluid wrapper--gray">
             <article class="container comments">
                 <div id="carouselExampleControls" class="carousel slide p-5" data-ride="carousel">
