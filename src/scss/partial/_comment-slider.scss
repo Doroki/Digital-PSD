@@ -1,0 +1,60 @@
+.comments {
+    &__icon {
+        color: $green-color;
+        border: 3px solid $green-color;
+        font-size: 60px;
+        padding: 0.4em;
+        align-self: center;
+
+        @include queries(lg) {
+            font-size: 50px;
+        }
+
+        @include queries(md) {
+            font-size: 40px;
+        }
+
+        @include queries(sm) {
+            font-size: 30px;
+        }
+    }
+
+    &__cite {
+        font-size: $secondary-header-size;
+        font-style: italic;
+        color: $gray-font;
+
+        @include queries(lg) {
+            font-size: 20px;
+        }
+
+        @include queries(md) {
+            font-size: 18px;
+        }
+
+        @include queries(sm) {
+            font-size: 16px;
+        }
+    }
+
+    &__author {
+        font-size: $secondary-header-size;
+        font-family: $decoration-font;
+        color: $dark-font;
+        display: flex;
+        align-items: center;
+
+        &::before {
+            content: "";
+            display: flex;
+            width: 60px;
+            height: 3px;
+            background-color: $red-color;
+            margin-right: 0.3em;
+        }
+    }
+
+    &__arrow-icon {
+        color: $gray-font;
+    }
+}

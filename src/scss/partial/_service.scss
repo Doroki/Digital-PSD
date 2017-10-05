@@ -1,0 +1,25 @@
+.service {
+    padding: 1.5em;
+    text-align: left;
+
+    &:first-of-type {
+        border-bottom: 1px solid #cccccc;
+    }
+
+    &__content {
+        color: $gray-font;
+        font-size: $normal-font-size;
+    }
+
+    &__header {
+        color: #000;
+        font-weight: 400;
+        font-size: $normal-font-size;
+    }
+
+    &__icon {
+        font-size: 2em !important;
+        color: $green-color;
+        font-size: 20px;
+    }
+}

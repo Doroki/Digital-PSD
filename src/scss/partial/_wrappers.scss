@@ -1,0 +1,22 @@
+.wrapper{
+    &--green {
+        background-color: $green-color; 
+    }
+
+    &--gray {
+        background-color: $background-color; 
+    }
+
+    &--image-1 {
+        background: url(../img/background/background-2.jpg);
+        position: relative;
+    }
+
+    &--image-2 {
+        background: url(../img/background/background-1.jpg);
+    }
+
+    &--image-3 {
+        background: url(../img/background/background-3.jpg); 
+    }
+}
