@@ -1,0 +1,77 @@
+.blog {
+    text-align: left;
+
+    @include queries(md) {
+        text-align: center;
+    }
+
+    &__header {
+        margin-top: 1em;
+        text-transform: uppercase;
+        font-family: $secondary-font;
+        font-size: $small-font-size;
+    }
+
+    &__content {
+        color: $gray-font;
+        font-family: $main-font;
+        font-size: $small-font-size;
+        border-bottom: 1px solid $light-gray-font;
+        margin-top: 1em;
+        padding-bottom: 1em;
+
+    }
+
+    &__icons {
+        color: $gray-font;
+        font-family: $main-font;
+        font-size: $small-font-size;
+        font-style: italic;
+        margin-bottom: 2em;
+
+        & span::before {
+            font-size: 1.2em;
+            color: $green-color;
+            margin: 0.2em 0.6em;
+        
+        }
+    }
+
+    &__date {
+        width: 60px;
+        height: 70px;
+        background-color: $green-color;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 0.8em;
+        justify-content: center;
+        align-items: center;
+        font-family: $secondary-font;
+        position: absolute;
+        margin-top: -2.7em;
+        margin-left: -0.4em;
+        
+
+        @include queries(md) {
+            margin-left: 20%;
+        }
+
+        @include queries(sm) {
+            margin-left: 10%;
+        }
+
+        @include queries(xs) {
+            margin-left: -2%;
+        }
+    }
+
+    &__month {
+        font-size: 16px;
+        font-style: italic;
+        font-family: $main-font;
+        font-weight: lighter;
+    }
+}

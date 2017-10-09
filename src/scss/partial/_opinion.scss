@@ -1,0 +1,30 @@
+.opinion {
+    text-align: left;
+
+    &__header {
+        font-family: $secondary-font;
+        font-size: $small-font-size;
+        font-weight: 500;
+    }
+
+    &__desc {
+        font-family: $main-font;
+        font-size: $small-font-size;
+        font-style: italic;
+        color: $gray-font;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 60px;
+            border-bottom: solid 3px $red-color;
+            margin: 0.8em 0;
+        }
+    }
+
+    &__cite {
+        font-family: $main-font;
+        font-size: $small-font-size;
+        color: $gray-font;
+    }
+}

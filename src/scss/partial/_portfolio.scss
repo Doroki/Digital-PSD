@@ -1,0 +1,56 @@
+.portfolio {
+    &__photos {
+        position: relative;
+
+        & img {
+            width: 100%;
+        }
+        
+        &::before {
+            @include hover-photo;
+        }
+
+        &:hover {
+            &::before {
+                opacity: 1;
+                transition: opacity 0.4s linear;
+            }
+
+            & > .portfolio__text {
+                opacity: 1;
+                transition: opacity 0.3s linear;
+            }
+        }
+    }
+
+    &__text {
+        color: #FFF;
+        z-index: 100;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 600;
+        width: 100%;
+        opacity: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: opacity 0.3s linear;
+
+        &:before {
+            font-size: 2em;
+            margin-bottom: 0.3em;
+        }
+    }
+
+    &__desc {
+        margin-top: 0.8em;
+        font-family: $main-font;
+        font-size: $small-font-size;
+        font-weight: 300;
+        font-style: italic;
+        display: block;
+    }
+}

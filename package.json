@@ -1,5 +1,5 @@
 {
-  "name": "js-calculator",
+  "name": "mogo-psd",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Doroki/JS-Calculator.git"
+    "url": "git+https://github.com/Doroki/Mogo-PSD.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Doroki/JS-Calculator/issues"
+    "url": "https://github.com/Doroki/Mogo-PSD/issues"
   },
-  "homepage": "https://github.com/Doroki/JS-Calculator#readme",
+  "homepage": "https://github.com/Doroki/Mogo-PSD#readme",
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "del": "^3.0.0",

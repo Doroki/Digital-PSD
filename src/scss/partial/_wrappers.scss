@@ -8,16 +8,19 @@
     }
 
     &--image-1 {
-        background: url(../img/background/background-2.jpg);
+        background: url(../img/background/background-2.jpg) center;
+        background-size: cover;
         position: relative;
         padding-top: 1px;
     }
 
     &--image-2 {
-        background: url(../img/background/background-1.jpg);
+        background: url(../img/background/background-1.jpg) center;
+        background-size: cover;
     }
 
     &--image-3 {
-        background: url(../img/background/background-3.jpg); 
+        background: url(../img/background/background-3.jpg) center;
+        background-size: cover;
     }
 }
