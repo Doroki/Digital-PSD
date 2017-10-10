@@ -783,7 +783,7 @@ html, body {
   @media (max-width: 991px) {
     .blog {
       text-align: center; } }
-  .blog__header {
+  .blog__header, .footer__header, .footer__content {
     margin-top: 1em;
     text-transform: uppercase;
     font-family: "Montserrat", Arial, sans-serif;
@@ -876,6 +876,150 @@ html, body {
       margin-bottom: 0.5em; }
     .map__header::after {
       margin-bottom: 0; }
+
+.footer__logo {
+  color: #cccccc;
+  font-size: 54px;
+  font-weight: bold;
+  font-family: "Montserrat", Arial, sans-serif; }
+
+.footer__text {
+  color: #999999;
+  font-size: 15px; }
+
+.footer__followers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  font-weight: normal;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 15px;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 0.8em; }
+
+.footer__counter {
+  margin-right: 6px;
+  font-size: 18px;
+  font-weight: bold; }
+
+.footer__social {
+  padding: .8em 0;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 15px;
+  color: #999999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.footer__icons {
+  color: #95e1d3;
+  font-size: 18px; }
+
+.footer__subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.footer__label {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.footer__email {
+  border: 1px solid #cccccc;
+  color: #999999;
+  margin: 0;
+  padding: 0.5em 1em;
+  font-family: "Roboto", Arial, sans-serif;
+  font-style: italic;
+  font-size: 15px;
+  width: 70%; }
+  .footer__email::-webkit-input-placeholder {
+    color: #cccccc;
+    font-family: "Roboto", Arial, sans-serif;
+    font-style: italic;
+    font-size: 15px; }
+  .footer__email:-ms-input-placeholder {
+    color: #cccccc;
+    font-family: "Roboto", Arial, sans-serif;
+    font-style: italic;
+    font-size: 15px; }
+  .footer__email::placeholder {
+    color: #cccccc;
+    font-family: "Roboto", Arial, sans-serif;
+    font-style: italic;
+    font-size: 15px; }
+
+.footer__button {
+  background-color: #95e1d3;
+  color: #fff;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 0.5em 1em;
+  border: none;
+  outline: none;
+  width: 30%; }
+  @media (max-width: 575px) {
+    .footer__button {
+      font-size: 12px;
+      padding: 0 0.5em; } }
+
+.footer__header {
+  margin-bottom: 1em; }
+
+.footer__content {
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0; }
+
+.footer__date {
+  font-family: "Roboto", Arial, sans-serif;
+  font-style: italic;
+  font-size: 13px;
+  color: #999999; }
+
+.footer__instagram-photo {
+  margin: 3px; }
+
+.footer__img-caption {
+  font-family: "Roboto", Arial, sans-serif;
+  color: #333333;
+  margin-top: 1em;
+  margin-bottom: 0;
+  text-decoration: none;
+  font-style: italic;
+  font-size: 13px; }
+
+.footer__sign {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #cccccc;
+  padding-top: 1em;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 500; }
+
+.footer__sign-red {
+  color: #f38181;
+  text-decoration: none; }
+  .footer__sign-red:hover {
+    text-decoration: none; }
 
 /*=============================================  
 ===============  End of PARTIAL ===============

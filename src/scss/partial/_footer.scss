@@ -1,0 +1,146 @@
+.footer {
+
+    &__logo {
+        color: $light-gray-font;
+        font-size: $main-header-decor-size;
+        font-weight: bold;
+        font-family: $secondary-font;
+
+    }
+
+    &__text {
+        color: $gray-font;
+        font-size: $small-font-size;
+        
+    }
+
+    //social
+    &__followers {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        font-weight: normal;
+        font-family: $secondary-font;
+        font-size: $small-font-size;
+        border-bottom: 1px solid $light-gray-font;
+        padding-bottom: 0.8em;
+    }
+
+    &__counter {
+        margin-right: 6px;
+        font-size: $small-header-size;
+        font-weight: bold;
+    }
+
+    &__social {
+        padding: .8em 0;
+        font-style: italic;
+        font-weight: lighter;
+        font-size: $small-font-size;
+        color: $gray-font;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    &__icons {
+        color: $green-color;
+        font-size: 18px;
+    }
+
+    //subscription form
+    &__subscribe {
+        display: flex;
+    }
+
+    &__label {
+        @include visually-hidden; 
+    }
+
+    &__email {
+        border: 1px solid $light-gray-font;
+        color: $gray-font;
+        margin: 0;
+        padding: 0.5em 1em;
+        font-family: $main-font;
+        font-style: italic;
+        font-size: $small-font-size;
+        width: 70%;
+
+        &::placeholder {
+            color: $light-gray-font;
+            font-family: $main-font;
+            font-style: italic; 
+            font-size: $small-font-size;
+        }
+    }
+
+    &__button {
+        background-color: $green-color;
+        color: #fff;
+        font-family: $secondary-font;
+        font-weight: bold;
+        font-size: 14px;
+        padding: 0.5em 1em;
+        border: none;
+        outline: none;
+        width: 30%;
+
+        @include queries(xs) {
+            font-size: 12px;
+            padding: 0 0.5em
+        }
+    }
+    //blog
+    &__header {
+        @extend .blog__header;
+        margin-bottom: 1em;
+    }
+
+    &__content {
+        @extend .blog__header;
+        font-size: $mini-font-size;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    &__date {
+        font-family: $main-font;
+        font-style: italic;
+        font-size: $mini-font-size;
+        color: $gray-font;
+    }
+    //instagram
+    &__instagram-photo {
+        margin: 3px;
+    }
+
+    &__img-caption {
+        font-family: $main-font;
+        color: $dark-font;
+        margin-top: 1em;
+        margin-bottom: 0;
+        text-decoration: none;
+        font-style: italic;
+        font-size: $mini-font-size;
+    }
+
+    &__sign {
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid $light-gray-font;
+        padding-top: 1em;
+        font-family: $secondary-font;
+        font-size: $small-font-size;
+        font-weight: 500;
+    }
+
+    &__sign-red {
+        color: $red-color;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
