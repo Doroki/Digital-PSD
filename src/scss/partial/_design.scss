@@ -1,0 +1,14 @@
+
+.phone {
+    display: none;
+    position: absolute;
+    bottom: -7%;
+    left: 65%;
+}
+
+.tablet {
+    margin-top: 5%;
+    @include queries(sm) {
+        width: 100%;
+    }
+}

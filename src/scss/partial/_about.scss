@@ -1,0 +1,60 @@
+.about {
+    &__container {
+        width: fit-content;
+        background-color: $green-color;
+        background-clip: content-box;
+        margin: auto;
+        position: relative;
+    }   
+    
+    &__box {
+        overflow: hidden;
+        transition: transform 0.3s linear;
+        position: relative;
+        cursor: pointer;
+        
+        &::before {
+            content: "";
+            display: block;
+            opacity: 0;
+            transition: opacity 0.4s linear;
+        }
+
+        &::before {
+            @include hover-photo;
+        }
+
+        &:hover {
+            transform: translateX(-10px) translateY(-10px);
+            transition: transform 0.3s linear;
+
+            &:hover {
+                &::before {
+                    opacity: 1;
+                    transition: opacity 0.4s linear;
+                }
+
+            .about__text {
+                transform: translate(-50%, -50%);
+                top: 50%;
+                left: 50%;
+                transition: top 0.5s linear;
+                }
+            }
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #FFF;
+        position: absolute;
+        top: 150%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: top 0.5s linear;
+        z-index: 1000;
+        font-size: $small-header-size;
+    }
+}

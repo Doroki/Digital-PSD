@@ -1,4 +1,6 @@
 .comments {
+    padding: 2em 0;
+
     &__icon {
         color: $green-color;
         border: 3px solid $green-color;
@@ -56,5 +58,14 @@
 
     &__arrow-icon {
         color: $gray-font;
+        font-size: 2em;
+    }
+
+    &__left-arrow {
+        width: 7%;
+    }
+
+    &__right-arrow {
+        width: 7%;
     }
 }

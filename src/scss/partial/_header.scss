@@ -1,5 +1,5 @@
 .header {
-    background-image: linear-gradient( 180deg, rgba(243,129,129, 0.9) 0%,  rgba(252,227,138, 0.9) 100%), url("../img/slider/slider-img-1.jpg");
+    background-image: linear-gradient( 180deg, rgba(243,129,129, 0.9) 0%,  rgba(252,227,138, 0.9) 100%);
     background-position: center;
     background-size: cover;
     min-height: 100%;
@@ -7,6 +7,7 @@
     font-family: $secondary-font;
     display: flex;
     justify-items: space-between;
+    position: relative;
 
     &__decor {
         font-size: $main-header-decor-size;
@@ -54,6 +55,7 @@
         padding: 0.3em 0;
         font-size: $small-font-size;
         margin-bottom: 1em;
+        cursor: pointer;
 
         &:hover {
             color: $red-color;

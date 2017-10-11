@@ -1,0 +1,41 @@
+.counter {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-family: $secondary-font;
+    text-align: center;
+    white-space: nowrap;
+
+    &__box {
+        border-right: 0.5px solid $background-color;
+        padding: 3em 0.5em;
+
+        @include queries(sm) {
+            border: none;
+            padding: 0 0;
+        }
+
+        &:first-of-type {
+            border-left: 0.5px solid $background-color;
+
+            @include queries(sm) {
+                border: none;
+            }
+        }
+    }
+    
+    &__number {
+        font-size: $counter-size;
+        font-weight: 600;
+        
+        @include queries(md) {
+            font-size: 34px;
+        }
+    }
+
+    &__text {
+        @include queries(md) {
+            font-size: 14px;
+        }
+    }
+}

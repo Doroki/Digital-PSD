@@ -46,6 +46,10 @@
     &__icons {
         color: $green-color;
         font-size: 18px;
+
+        &:hover {
+            text-decoration: none;
+        }
     }
 
     //subscription form
@@ -85,6 +89,7 @@
         border: none;
         outline: none;
         width: 30%;
+        cursor: pointer;
 
         @include queries(xs) {
             font-size: 12px;
@@ -102,6 +107,7 @@
         font-size: $mini-font-size;
         font-weight: 500;
         margin: 0;
+        color: $dark-font;
     }
 
     &__date {
@@ -113,6 +119,12 @@
     //instagram
     &__instagram-photo {
         margin: 3px;
+        cursor: pointer;
+
+        @include queries(xs) {
+            width: 82px;
+            height: 82px;
+        }
     }
 
     &__img-caption {
