@@ -1,5 +1,5 @@
 .header {
-    background-image: linear-gradient( 180deg, rgba(243,129,129, 0.9) 0%,  rgba(252,227,138, 0.9) 100%);
+    background-image: linear-gradient( 180deg, rgba(243,129,129, 0.8) 0%,  rgba(252,227,138, 0.8) 100%);
     background-position: center;
     background-size: cover;
     min-height: 100%;
@@ -8,6 +8,14 @@
     display: flex;
     justify-items: space-between;
     position: relative;
+
+    &__content-box {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 300px;
+        text-align: center;
+        justify-content: center;
+    }
 
     &__decor {
         font-size: $main-header-decor-size;

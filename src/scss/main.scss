@@ -1,22 +1,25 @@
 
 //========= HELPERS =========//
-@import "helpers/_variables.scss";
-@import "helpers/_mixins.scss";
+@import "helpers/variables.scss";
+@import "helpers/mixins.scss";
 
 //========= BODY STYLE =========//
-@import "base/_body-style.scss";
+@import "base/body-style.scss";
 
 //========= FONTELLO ICONS =========//
-@import "base/_fontello.scss";
+@import "base/fontello.scss";
 
 /*=============================================
 =*****                                   *****=
 =*****            COMPONENTS             *****=
 =*****                                   *****=
 =============================================*/
-
-@import "components/_buttons.scss";
-@import "components/_icons.scss";
+@import "components/lightbox.scss";
+@import "components/scrollTopButton.scss";
+@import "components/article.scss";
+@import "components/header-carousel.scss";
+@import "components/wrappers.scss";
+@import "components/comment-slider.scss";
 
 /*=============================================  
 =============   End of COMPONENTS =============
@@ -28,16 +31,12 @@
 =*****                                   *****=
 =============================================*/
 @import "partial/header.scss";
-@import "partial/header-carousel.scss";
 @import "partial/navigation.scss";
-@import "partial/article.scss";
-@import "partial/wrappers.scss";
 @import "partial/about.scss";
 @import "partial/counter.scss";
 @import "partial/work.scss";
 @import "partial/design.scss";
 @import "partial/service.scss";
-@import "partial/comment-slider.scss";
 @import "partial/team.scss";
 @import "partial/logos.scss";
 @import "partial/portfolio.scss";

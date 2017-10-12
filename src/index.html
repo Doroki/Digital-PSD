@@ -16,10 +16,10 @@
 <body>
 
     <!-- HEADER -->
-    <header class="header">
+    <header id="header" class="header">
 
         <!-- HEADER-SLIDER-->
-        <div id="mainCarousel" class="carousel slide main-carousel" data-ride="carousel">
+        <div id="mainCarousel" class="carousel slide main-carousel carousel-fade" data-ride="carousel">
             <ol class="carousel-indicators container main-carousel__indicators">
                 <li data-target="#mainCarousel" data-slide-to="0" class="progress active">
                     <div class="progress-bar main-carousel__progress" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
@@ -39,7 +39,7 @@
                         <span class="main-carousel__text--larger">03</span> ABOUT
                     </p>
                 </li>
-                <li data-target="#mainCarousel" data-slide-to="2" class="progress">
+                <li data-target="#mainCarousel" data-slide-to="3" class="progress">
                     <div class="progress-bar main-carousel__progress" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
                     <p class="main-carousel__text">
                         <span class="main-carousel__text--larger">04</span> CONTACTS
@@ -56,30 +56,30 @@
 
         <div class="container mh-100 d-flex flex-column justify-items-between">
             <!-- NAVIGATION BAR -->
-            <nav class="navbar navbar-toggleable-md navigation">
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            <nav id="navigation" class="navbar navbar-toggleable-md navigation">
+                <button class="navbar-toggler navbar-toggler-right mt-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navigation__icon-menu"></span>
                 </button>
                 <h1>
                     <a class="navbar-brand navigation__logo" href="#">MoGo</a>
                 </h1>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse justify-content-end navigation__list" id="navbarSupportedContent">
                     <ul class="navbar-nav d-flex align-items-center">
                         <li class="nav-item mb-2 mb-lg-0">
-                            <a class="navigation__link" href="#">ABOUT</a>
+                            <a class="navigation__link" href="#about">ABOUT</a>
                         </li>
                         <li class="nav-item mb-2 mb-lg-0">
-                            <a class="navigation__link" href="#">SERVICE</a>
+                            <a class="navigation__link" href="#service">SERVICE</a>
                         </li>
                         <li class="nav-item mb-2 mb-lg-0">
-                            <a class="navigation__link" href="#">WORK</a>
+                            <a class="navigation__link" href="#work">WORK</a>
                         </li>
                         <li class="nav-item mb-2 mb-lg-0">
-                            <a class="navigation__link" href="#">BLOG</a>
+                            <a class="navigation__link" href="#blog">BLOG</a>
                         </li>
                         <li class="nav-item mb-2 mb-lg-0">
-                            <a class="navigation__link" href="#">CONTACT</a>
+                            <a class="navigation__link" href="#contact">CONTACT</a>
                         </li>
                     </ul>
                     <form class="dropdown form-inline my-2 my-lg-0 d-flex justify-content-center">
@@ -92,7 +92,7 @@
             </nav>
 
             <!-- HEADER TEXT -->
-            <section class="col-xl-8  text-center m-lg-auto d-flex flex-column justify-content-center">
+            <section class="col-xl-8 m-lg-auto header__content-box">
                 <p class="header__decor">Creative Template</p>
                 <h2 class="header__content">WELCOME TO&nbsp;MOGO</h2>
                 <button type="button" class="header__button">LEARN MORE</button>
@@ -104,7 +104,7 @@
     <main>
 
         <!-- ABOUT SECTION -->
-        <section class="container text-center article">
+        <section id="about" class="container text-center article">
             <p class="article__decor">What we do</p>
             <h3 class="article__header">STORY ABOUT US</h3>
             <p class="article__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -134,7 +134,7 @@
         </section>
 
         <!-- COUNTER SECTION -->
-        <section class="container-fluid wrapper--green">
+        <section id="counter" class="container-fluid wrapper--green">
             <article class="container">
                 <div class="row counter">
                     <div class="col-md counter__box">
@@ -162,7 +162,7 @@
         </section>
 
         <!-- WORK SECTION -->
-        <section class="container text-center article">
+        <section id="service" class="container text-center article">
             <p class="article__decor">We work with</p>
             <h3 class="article__header">AMAZING SERVICES</h3>
             <div class="row work mt-2">
@@ -309,12 +309,12 @@
         </section>
 
         <!-- COMMENTS SECTION -->
-        <section class="container-fluid wrapper--gray">
+        <section class="container-fluid wrapper--gray hidden-xs-down">
             <article class="container comments">
                 <div id="opinionCarousel" class="carousel slide p-md-5" data-ride="carousel">
                     <div class="carousel-inner" role="listbox">
                         <blockquote class="carousel-item mb-0 active">
-                            <div class="d-flex flex-column flex-md-row media ml-lg-5 mr-lg-5 pl-5 pr-5">
+                            <div class="d-flex w-100 flex-column flex-md-row media ml-lg-5 mr-lg-5 pl-5 pr-5">
                                 <span class="d-flex ml-1 mr-4 comments__icon"></span>
                                 <div class="media-body">
                                     <p class="comments__cite">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -324,21 +324,21 @@
                             </div>
                         </blockquote>
                         <blockquote class="carousel-item mb-0">
-                            <div class="d-flex flex-column flex-md-row media ml-lg-5 mr-lg-5 pl-5 pr-5">
+                            <div class="d-flex w-100 flex-column flex-md-row media ml-lg-5 mr-lg-5 pl-5 pr-5">
                                 <span class="d-flex ml-1 mr-4 comments__icon"></span>
                                 <div class="media-body">
-                                    <p class="comments__cite">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+                                    <p class="comments__cite">“Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio neque cum reprehenderit
+                                        molestias tempore error. Blanditiis iusto sunt amet pariatur.”</p>
                                     <h5 class="mt-0 comments__author">John Doe</h5>
                                 </div>
                             </div>
                         </blockquote>
                         <blockquote class="carousel-item mb-0">
-                            <div class="d-flex flex-column flex-md-row media ml-lg-5 mr-lg-5 pl-5 pr-5">
+                            <div class="d-flex w-100 flex-column flex-md-row media ml-lg-5 mr-lg-5 pl-5 pr-5">
                                 <span class="d-flex ml-1 mr-4 comments__icon"></span>
                                 <div class="media-body">
-                                    <p class="comments__cite">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+                                    <p class="comments__cite">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa tempore ipsa, saepe neque
+                                        mollitia aspernatur nemo minus voluptate consequuntur nulla nostrum velit sed!”</p>
                                     <h5 class="mt-0 comments__author">John Doe</h5>
                                 </div>
                             </div>
@@ -440,7 +440,7 @@
         </section>
 
         <!-- PORTFOLIO SECTION -->
-        <section class="container-flex pt-2 pt-lg-0">
+        <section id="work" class="container-flex pt-2 pt-lg-0">
             <article class="container text-center article">
                 <p class="article__decor">What we do</p>
                 <h3 class="article__header">SOME OF OUR WORK</h3>
@@ -521,7 +521,7 @@
                 <div id="commentCarousel" class="carousel slide p-md-5" data-ride="carousel">
                     <div class="carousel-inner" role="listbox">
                         <blockquote class="carousel-item mb-0 active">
-                            <div class="d-flex flex-column flex-md-row media ml-lg-5 mr-lg-5 pl-5 pr-5 align-items-center">
+                            <div class="d-flex w-100 flex-column flex-md-row media ml-lg-5 mr-lg-5 pl-5 pr-5 align-items-center">
                                 <img src="img/photos/opinion-slide.png" alt="" class="d-none d-md-flex ml-1 mr-4">
                                 <div class="media-body">
                                     <p class="comments__cite">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -531,7 +531,7 @@
                             </div>
                         </blockquote>
                         <blockquote class="carousel-item mb-0">
-                            <div class="d-flex flex-column flex-md-row media ml-lg-5 mr-lg-5 pl-5 pr-5 align-items-center">
+                            <div class="d-flex w-100 flex-column flex-md-row media ml-lg-5 mr-lg-5 pl-5 pr-5 align-items-center">
                                 <img src="img/photos/opinion-slide.png" alt="" class="d-none d-md-flex ml-1 mr-4">
                                 <div class="media-body">
                                     <p class="comments__cite">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -541,7 +541,7 @@
                             </div>
                         </blockquote>
                         <blockquote class="carousel-item mb-0">
-                            <div class="d-flex flex-column flex-md-row media ml-lg-5 mr-lg-5 pl-5 pr-5 align-items-center">
+                            <div class="d-flex w-100 flex-column flex-md-row media ml-lg-5 mr-lg-5 pl-5 pr-5 align-items-center">
                                 <img src="img/photos/opinion-slide.png" alt="" class="d-none d-md-flex ml-1 mr-4">
                                 <div class="media-body">
                                     <p class="comments__cite">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -628,7 +628,7 @@
         </section>
 
         <!-- BLOG SECTION -->
-        <section class="container-flex">
+        <section id="blog" class="container-flex">
             <article class="container text-center article pt-3 pb-3">
                 <p class="article__decor">Our stories</p>
                 <h3 class="article__header">LATEST BLOG</h3>
@@ -689,8 +689,8 @@
         </section>
 
         <!-- MAP SECTION -->
-        <section class="container-fluid wrapper--image-3 map">
-            <h3 class="map__header icon-location">OPEN MAP</h3>
+        <section id="map" class="container-fluid wrapper--image-3 justify-content-center map">
+            <h3 id="mapButton" class="map__header icon-location">OPEN MAP</h3>
         </section>
     </main>
 
@@ -699,7 +699,7 @@
         <section class="row">
 
             <!-- first col -->
-            <div class="col-xl-5 d-flex flex-column justify-content-between">
+            <div id="contact" class="col-xl-5 d-flex flex-column justify-content-between">
                 <h2 class="footer__logo">MoGo</h2>
                 <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -726,7 +726,7 @@
 
             <!-- second col -->
             <div class="col-md d-flex flex-column justify-content-xl-between">
-                <h5 class="footer__header">INSTAGRAM</h5>
+                <h5 class="footer__header">BLOGS</h5>
                 <a href="#" class="d-flex flex-row media mb-4 mb-xl-0">
                     <img src="img/images/footer-blog-1.jpg" alt="" class="d-flex mr-4">
                     <div class="media-body">
@@ -737,7 +737,7 @@
                     </div>
                 </a>
                 <a href="#" class="d-flex flex-row media mb-4 mb-xl-0">
-                    <img src="img/images/footer-blog-1.jpg" alt="" class="d-flex mr-4">
+                    <img src="img/images/footer-blog-2.jpg" alt="" class="d-flex mr-4">
                     <div class="media-body">
                         <p class="footer__content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -746,7 +746,7 @@
                     </div>
                 </a>
                 <a href="#" class="d-flex flex-row media mb-4 mb-xl-0">
-                    <img src="img/images/footer-blog-1.jpg" alt="" class="d-flex mr-4">
+                    <img src="img/images/footer-blog-3.jpg" alt="" class="d-flex mr-4">
                     <div class="media-body">
                         <p class="footer__content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -758,21 +758,122 @@
 
             <!-- third col -->
             <div class="col-md d-flex flex-column justify-content-xl-between">
-                <h5 class="footer__header">INSTAGRAM</h5>
-                <figure class="m-0">
-                    <img src="img/images/instagram-1.jpg" alt="" class="footer__instagram-photo">
-                    <img src="img/images/instagram-2.jpg" alt="" class="footer__instagram-photo">
-                    <img src="img/images/instagram-3.jpg" alt="" class="footer__instagram-photo">
-                    <img src="img/images/instagram-4.jpg" alt="" class="footer__instagram-photo">
-                    <img src="img/images/instagram-5.jpg" alt="" class="footer__instagram-photo">
-                    <img src="img/images/instagram-6.jpg" alt="" class="footer__instagram-photo">
-                    <img src="img/images/instagram-7.jpg" alt="" class="footer__instagram-photo">
-                    <img src="img/images/instagram-8.jpg" alt="" class="footer__instagram-photo">
-                    <img src="img/images/instagram-9.jpg" alt="" class="footer__instagram-photo">
+                <h5 class="footer__header">INSTAGRAM (click image)</h5>
+                <figure class="m-0 text-center text-md-left">
+                    <img src="img/images/instagram-1.jpg" alt="" class="footer__instagram-photo" type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#modalImage-1">
+                    <img src="img/images/instagram-2.jpg" alt="" class="footer__instagram-photo" type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#modalImage-2">
+                    <img src="img/images/instagram-3.jpg" alt="" class="footer__instagram-photo" type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#modalImage-3">
+                    <img src="img/images/instagram-4.jpg" alt="" class="footer__instagram-photo" type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#modalImage-4">
+                    <img src="img/images/instagram-5.jpg" alt="" class="footer__instagram-photo" type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#modalImage-5">
+                    <img src="img/images/instagram-6.jpg" alt="" class="footer__instagram-photo" type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#modalImage-6">
+                    <img src="img/images/instagram-7.jpg" alt="" class="footer__instagram-photo" type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#modalImage-7">
+                    <img src="img/images/instagram-8.jpg" alt="" class="footer__instagram-photo" type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#modalImage-8">
+                    <img src="img/images/instagram-9.jpg" alt="" class="footer__instagram-photo" type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#modalImage-9">
                 </figure>
                 <p class="mt-2">
                     <a href="#" class="footer__img-caption">View more photos</a>
                 </p>
+            </div>
+
+            <!-- Modal - LIGHTBOX FOR INSTAGRAM -->
+            <div class="modal fade" id="modalImage-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog lightbox" role="document">
+                    <div class="modal-content d-block">
+                        <button type="button" class="close lightbox__close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <img src="img/instagram/instagram-4.jpg" alt="" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalImage-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog lightbox" role="document">
+                    <div class="modal-content d-block">
+                        <button type="button" class="close lightbox__close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <img src="img/instagram/instagram-3.jpg" alt="" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalImage-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog lightbox" role="document">
+                    <div class="modal-content d-block">
+                        <button type="button" class="close lightbox__close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <img src="img/instagram/instagram-7.jpg" alt="" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalImage-4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog lightbox" role="document">
+                    <div class="modal-content d-block">
+                        <button type="button" class="close lightbox__close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <img src="img/instagram/instagram-8.jpg" alt="" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalImage-5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog lightbox" role="document">
+                    <div class="modal-content d-block">
+                        <button type="button" class="close lightbox__close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <img src="img/instagram/instagram-5.jpg" alt="" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalImage-6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog lightbox" role="document">
+                    <div class="modal-content d-block">
+                        <button type="button" class="close lightbox__close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <img src="img/instagram/instagram-1.jpeg" alt="" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalImage-7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog lightbox" role="document">
+                    <div class="modal-content d-block">
+                        <button type="button" class="close lightbox__close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <img src="img/instagram/instagram-2.jpg" alt="" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalImage-8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog lightbox" role="document">
+                    <div class="modal-content d-block">
+                        <button type="button" class="close lightbox__close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <img src="img/instagram/instagram-9.jpg" alt="" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalImage-9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog lightbox" role="document">
+                    <div class="modal-content d-block">
+                        <button type="button" class="close lightbox__close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <img src="img/instagram/instagram-6.jpg" alt="" class="img-fluid w-100">
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -782,14 +883,26 @@
                 <a href="#" class="footer__sign-red">Laaqiq</a>
             </p>
         </div>
+        <a class="scroll-button arrow-icon" href="#header" id="scrollTopButton"></a>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-        crossorigin="anonymous"></script>
+    <!-- build:js js/jquery.min.js -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- endbuild -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
+    
+    <!-- build:js js/scripts.min.js -->
+    <script src="js/counter-animation.js"></script>
+    <script src="js/show-scroll-button.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/show-map.js"></script>
+    <!-- endbuild -->
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3LnCiRtFMdqo3xA_zb_DYxx0OdqMQOOU" async defer></script>
 </body>
 
 </html>

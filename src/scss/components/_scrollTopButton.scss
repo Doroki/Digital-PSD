@@ -1,0 +1,39 @@
+.scroll-button {
+    position: fixed;
+    bottom: 3%;
+    right: -15%;
+    width: 40px;
+    height: 40px;
+    background-color: $green-color;
+    border-radius: 50%;
+    transform: rotate(90deg);
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.5em;
+    transition: right 0.3s ease-out;
+
+    &:hover {
+        text-decoration: none;
+
+        &::before {
+            color: $red-color;
+        }
+        
+    }
+
+    &:focus {
+        text-decoration: none;
+        color: #FFF;
+    }
+
+    &::before {
+        margin-right: 50%;
+        margin-top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.visiable {
+    right: 3%;
+    transition: right 0.3s ease-out;
+}

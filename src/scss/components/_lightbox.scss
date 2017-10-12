@@ -1,0 +1,19 @@
+.lightbox {
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%) !important;
+    max-width: 1000px;
+    max-height: 95% !important;
+    padding: 25px;
+
+    &__close {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        color: #fff;
+
+        &:hover {
+            color: $green-color;
+        }
+    }
+}
