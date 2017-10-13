@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MoGo</title>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300,400,500,600,700|Roboto:300,400,400i,700"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="header" class="header">
+
+        <!-- HEADER-SLIDER-->
+        <div id="mainCarousel" class="carousel slide main-carousel carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators container main-carousel__indicators">
+                <li data-target="#mainCarousel" data-slide-to="0" class="progress active">
+                    <div class="progress-bar main-carousel__progress" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                    <p class="main-carousel__text">
+                        <span class="main-carousel__text--larger">01</span> INTRO
+                    </p>
+                </li>
+                <li data-target="#mainCarousel" data-slide-to="1" class="progress">
+                    <div class="progress-bar main-carousel__progress" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                    <p class="main-carousel__text">
+                        <span class="main-carousel__text--larger">02</span> WORK
+                    </p>
+                </li>
+                <li data-target="#mainCarousel" data-slide-to="2" class="progress">
+                    <div class="progress-bar main-carousel__progress" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                    <p class="main-carousel__text">
+                        <span class="main-carousel__text--larger">03</span> ABOUT
+                    </p>
+                </li>
+                <li data-target="#mainCarousel" data-slide-to="3" class="progress">
+                    <div class="progress-bar main-carousel__progress" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                    <p class="main-carousel__text">
+                        <span class="main-carousel__text--larger">04</span> CONTACTS
+                    </p>
+                </li>
+            </ol>
+            <div class="carousel-inner main-carousel__image-box carousel-image" role="listbox">
+                <div class="carousel-item carousel-image__photo carousel-image__photo--1 active"></div>
+                <div class="carousel-item carousel-image__photo carousel-image__photo--2"></div>
+                <div class="carousel-item carousel-image__photo carousel-image__photo--3"></div>
+                <div class="carousel-item carousel-image__photo carousel-image__photo--4"></div>
+            </div>
+        </div>
+
+        <div class="container mh-100 d-flex flex-column justify-items-between">
+            <!-- NAVIGATION BAR -->
+            <nav id="navigation" class="navbar navbar-toggleable-md navigation">
+                <button class="navbar-toggler navbar-toggler-right mt-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navigation__icon-menu"></span>
+                </button>
+                <h1>
+                    <a class="navbar-brand navigation__logo" href="#">MoGo</a>
+                </h1>
+                <div class="collapse navbar-collapse justify-content-end navigation__list" id="navbarSupportedContent">
+                    <ul class="navbar-nav d-flex align-items-center">
+                        <li class="nav-item mb-2 mb-lg-0">
+                            <a class="navigation__link" href="#about">ABOUT</a>
+                        </li>
+                        <li class="nav-item mb-2 mb-lg-0">
+                            <a class="navigation__link" href="#service">SERVICE</a>
+                        </li>
+                        <li class="nav-item mb-2 mb-lg-0">
+                            <a class="navigation__link" href="#work">WORK</a>
+                        </li>
+                        <li class="nav-item mb-2 mb-lg-0">
+                            <a class="navigation__link" href="#blog">BLOG</a>
+                        </li>
+                        <li class="nav-item mb-2 mb-lg-0">
+                            <a class="navigation__link" href="#contact">CONTACT</a>
+                        </li>
+                    </ul>
+                    <form class="dropdown form-inline my-2 my-lg-0 d-flex justify-content-center">
+                        <button class="navigation__icon-basket" type="button"></button>
+                        <button class="navigation__icon-search" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"></button>
+                        <input type="search" class="dropdown-menu navigation__search-field" aria-labelledby="dropdownMenuButton">
+                    </form>
+                </div>
+            </nav>
+
+            <!-- HEADER TEXT -->
+            <section class="col-xl-8 m-lg-auto header__content-box">
+                <p class="header__decor">Creative Template</p>
+                <h2 class="header__content">WELCOME TO&nbsp;MOGO</h2>
+                <button type="button" class="header__button">LEARN MORE</button>
+            </section>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="container text-center article">
+            <p class="article__decor">What we do</p>
+            <h3 class="article__header">STORY ABOUT US</h3>
+            <p class="article__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+            </p>
+            <div class="row mt-5 about">
+                <figure class="col-md-4 mb-2 about__container">
+                    <div class="about__box">
+                        <img src="./img/images/about-1.jpg" alt="" class="img-fluid about__image">
+                        <p class="about__text icon-users">SUPER TEAM</p>
+                    </div>
+                </figure>
+                <figure class="col-md-4 mb-2 about__container">
+                    <div class="about__box">
+                        <img src="./img/images/about-2.jpg" alt="" class="img-fluid about__image">
+                        <p class="about__text icon-users">SUPER TEAM</p>
+                    </div>
+                </figure>
+                <figure class="col-md-4 mb-2 about__container">
+                    <div class="about__box">
+                        <img src="./img/images/about-3.jpg" alt="" class="img-fluid about__image">
+                        <p class="about__text icon-users">SUPER TEAM</p>
+                    </div>
+                </figure>
+            </div>
+        </section>
+
+        <!-- COUNTER SECTION -->
+        <section id="counter" class="container-fluid wrapper--green">
+            <article class="container">
+                <div class="row counter">
+                    <div class="col-md counter__box">
+                        <p class="counter__number">42</p>
+                        <p class="counter__text">WEB DESIGN PROJECTS</p>
+                    </div>
+                    <div class="col-md counter__box">
+                        <p class="counter__number">123</p>
+                        <p class="counter__text">HAPPY CLIENT</p>
+                    </div>
+                    <div class="col-md counter__box">
+                        <p class="counter__number">15</p>
+                        <p class="counter__text">AWARD WINNER</p>
+                    </div>
+                    <div class="col-md counter__box">
+                        <p class="counter__number">99</p>
+                        <p class="counter__text">CUP OF COFFEE</p>
+                    </div>
+                    <div class="col-md counter__box">
+                        <p class="counter__number">24</p>
+                        <p class="counter__text">MEMEBERS</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- WORK SECTION -->
+        <section id="service" class="container text-center article">
+            <p class="article__decor">We work with</p>
+            <h3 class="article__header">AMAZING SERVICES</h3>
+            <div class="row work mt-2">
+                <article class="col-md-4 media mt-4">
+                    <span class="d-flex mr-3 icon-camera-outline work__icon"></span>
+                    <div class="media-body work__content">
+                        <h5 class="mt-0 work__header">PHOTOGRAPHY</h5>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </div>
+                </article>
+                <article class="col-md-4 media mt-4">
+                    <span class="d-flex mr-3 icon-website work__icon"></span>
+                    <div class="media-body work__content">
+                        <h5 class="mt-0 work__header">WEB DESIGN</h5>
+                        Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </div>
+                </article>
+                <article class="col-md-4 media mt-4">
+                    <span class="d-flex mr-3 icon-network work__icon"></span>
+                    <div class="media-body work__content">
+                        <h5 class="mt-0 work__header">CREATIVITY</h5>
+                        Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </div>
+                </article>
+            </div>
+            <div class="row work">
+                <article class="col-md-4 media mt-4">
+                    <span class="d-flex mr-3 icon-book-open work__icon"></span>
+                    <div class="media-body work__content">
+                        <h5 class="mt-0 work__header">SEO</h5>
+                        Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                    </div>
+                </article>
+                <article class="col-md-4 media mt-4">
+                    <span class="d-flex mr-3 icon-home-outline work__icon"></span>
+                    <div class="media-body work__content">
+                        <h5 class="mt-0 work__header">CSS/HTML</h5>
+                        Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.
+                    </div>
+                </article>
+                <article class="col-md-4 media mt-4">
+                    <span class="d-flex mr-3 icon-picture work__icon"></span>
+                    <div class="media-body work__content">
+                        <h5 class="mt-0 work__header">CSS/HTML</h5>
+                        Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- DESIGN SECTION -->
+        <section class="container-fluid wrapper--image-1">
+            <article class="container text-center article">
+                <p class="article__decor">For all devices</p>
+                <h3 class="article__header">UNIQUE DESIGN</h3>
+                <img src="img/images/tablet.png" class="tablet" alt="">
+                <img src="img/images/phone.png" class="phone d-md-block" alt="">
+            </article>
+        </section>
+
+        <!-- SERVICE SECTION -->
+        <section class="container text-center article">
+            <p class="article__decor">Service</p>
+            <h3 class="article__header">WHAT WE DO</h3>
+            <p class="article__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+            </p>
+            <div class="row service">
+                <div class="col-md-6 mb-2">
+                    <img class="img-fluid" src="img/images/what-we-do.jpg" alt="">
+                </div>
+
+                <div class="col-md-6" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="card rounded-0 mb-1">
+                        <div class="card-header service__tab" role="tab" id="headingOne">
+                            <h5 class="mb-0  w-100 h-100">
+                                <a class="collapsed service__heading" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    <span class="service__icon icon-picture service__arrow-icon"></span>
+                                    PHOTOGRAPHY
+                                </a>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="card-block service__tab-block">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                                labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card rounded-0 mb-1">
+                        <div class="card-header service__tab" role="tab" id="headingTwo">
+                            <h5 class="mb-0  w-100 h-100">
+                                <a class="collapsed service__heading" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    <span class="service__icon icon-vector service__arrow-icon"></span>
+                                    <span>CREATIVITY</span>
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="card-block service__tab-block">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                                labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card rounded-0 mb-1">
+                        <div class="card-header service__tab" role="tab" id="headingThree">
+                            <h5 class="mb-0 w-100 h-100">
+                                <a class="collapsed service__heading" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    <span class="service__icon icon-network service__arrow-icon"></span>
+                                    WEB DESIGN
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="card-block service__tab-block">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                                labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMMENTS SECTION -->
+        <section class="container-fluid wrapper--gray hidden-xs-down">
+            <article class="container comments">
+                <div id="opinionCarousel" class="carousel slide p-md-5" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <blockquote class="carousel-item mb-0 active">
+                            <div class="d-flex w-100 flex-column flex-md-row media ml-lg-5 mr-lg-5 pl-5 pr-5">
+                                <span class="d-flex ml-1 mr-4 comments__icon"></span>
+                                <div class="media-body">
+                                    <p class="comments__cite">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+                                    <h5 class="mt-0 comments__author">John Doe</h5>
+                                </div>
+                            </div>
+                        </blockquote>
+                        <blockquote class="carousel-item mb-0">
+                            <div class="d-flex w-100 flex-column flex-md-row media ml-lg-5 mr-lg-5 pl-5 pr-5">
+                                <span class="d-flex ml-1 mr-4 comments__icon"></span>
+                                <div class="media-body">
+                                    <p class="comments__cite">“Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio neque cum reprehenderit
+                                        molestias tempore error. Blanditiis iusto sunt amet pariatur.”</p>
+                                    <h5 class="mt-0 comments__author">John Doe</h5>
+                                </div>
+                            </div>
+                        </blockquote>
+                        <blockquote class="carousel-item mb-0">
+                            <div class="d-flex w-100 flex-column flex-md-row media ml-lg-5 mr-lg-5 pl-5 pr-5">
+                                <span class="d-flex ml-1 mr-4 comments__icon"></span>
+                                <div class="media-body">
+                                    <p class="comments__cite">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa tempore ipsa, saepe neque
+                                        mollitia aspernatur nemo minus voluptate consequuntur nulla nostrum velit sed!”</p>
+                                    <h5 class="mt-0 comments__author">John Doe</h5>
+                                </div>
+                            </div>
+                        </blockquote>
+                    </div>
+                    <a class="carousel-control-prev comments__left-arrow" href="#opinionCarousel" role="button" data-slide="prev">
+                        <span class="comments__arrow-icon comments__arrow-icon--left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next comments__right-arrow" href="#opinionCarousel" role="button" data-slide="next">
+                        <span class="comments__arrow-icon comments__arrow-icon--right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </article>
+        </section>
+
+        <!-- TEAM SECTION -->
+        <section class="container text-center article">
+            <p class="article__decor">Who we are</p>
+            <h3 class="article__header">MEET OUR TEAM</h3>
+            <p class="article__content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="row mt-5 team">
+                <figure class="col-md-4 m-md-0 mb-5 mt-5 team__container">
+                    <div class="team__box">
+                        <img src="./img/photos/team-1.jpg" alt="" class="img-fluid team__image">
+                        <div class="team__social">
+                            <a href="#" class="team__link icon-facebook"></a>
+                            <a href="#" class="team__link icon-twitter"></a>
+                            <a href="#" class="team__link icon-pinterest"></a>
+                            <a href="#" class="team__link icon-instagram"></a>
+                        </div>
+                    </div>
+                    <p class="team__text">
+                        MATTHEW DIX
+                        <span class="team__desc">Graphic Design</span>
+                    </p>
+                </figure>
+                <figure class="col-md-4 m-md-0 mb-5 mt-5 team__container">
+                    <div class="team__box">
+                        <img src="./img/photos/team-2.jpg" alt="" class="img-fluid team__image">
+                        <div class="team__social">
+                            <a href="#" class="team__link icon-facebook"></a>
+                            <a href="#" class="team__link icon-twitter"></a>
+                            <a href="#" class="team__link icon-pinterest"></a>
+                            <a href="#" class="team__link icon-instagram"></a>
+                        </div>
+                    </div>
+                    <p class="team__text">
+                        CHRISTOPHER CAMBELL
+                        <span class="team__desc">Branding/UX design</span>
+                    </p>
+                </figure>
+                <figure class="col-md-4 m-md-0 mb-5 mt-5 team__container">
+                    <div class="team__box">
+                        <img src="./img/photos/team-3.jpg" alt="" class="img-fluid team__image">
+                        <div class="team__social">
+                            <a href="#" class="team__link icon-facebook"></a>
+                            <a href="#" class="team__link icon-twitter"></a>
+                            <a href="#" class="team__link icon-pinterest"></a>
+                            <a href="#" class="team__link icon-instagram"></a>
+                        </div>
+                    </div>
+                    <p class="team__text">
+                        MICHAEL FERTIG
+                        <span class="team__desc">Developer</span>
+                    </p>
+                </figure>
+            </div>
+        </section>
+
+        <!-- LOGOS SECTION -->
+        <section class="container-fluid wrapper--gray">
+            <article class="container">
+                <figure class="row logos d-lg-flex">
+                    <div class="col-md-2">
+                        <img src="img/logos/hipster-circled-logo-2.png" alt="" class="fluid">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="img/logos/arrows-logo.png" alt="" class="fluid">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="img/logos/design-logo.png" alt="" class="fluid">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="img/logos/hipster-logo.png" alt="" class="fluid">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="img/logos/hipster-circled-logo-1.png" alt="" class="fluid">
+                    </div>
+                    <div class="col-md-2">
+                        <img src="img/logos/studio-logo.png" alt="" class="fluid">
+                    </div>
+                </figure>
+            </article>
+        </section>
+
+        <!-- PORTFOLIO SECTION -->
+        <section id="work" class="container-flex pt-2 pt-lg-0">
+            <article class="container text-center article">
+                <p class="article__decor">What we do</p>
+                <h3 class="article__header">SOME OF OUR WORK</h3>
+                <p class="article__content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </article>
+            <figure class="row mw-100 m-0">
+                <div class="col-lg-6 m-0 p-0 text-center">
+                    <div class="row m-0">
+                        <div class="col-sm-6 m-0 p-0 text-center portfolio__photos">
+                            <img src="img/images/our-work-3.jpg" alt="">
+                            <p class="portfolio__text icon-picture">
+                                CREATIVELY DESIGNED
+                                <span class="portfolio__desc">Lorem ipsum dolor sit</span>
+                            </p>
+                        </div>
+
+                        <div class="col-sm-6 m-0 p-0 text-center portfolio__photos">
+                            <img src="img/images/our-work-4.jpg" alt="">
+                            <p class="portfolio__text icon-picture">
+                                CREATIVELY DESIGNED
+                                <span class="portfolio__desc">Lorem ipsum dolor sit</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row m-0">
+                        <div class="col-sm-6 m-0 p-0 text-center portfolio__photos">
+                            <img src="img/images/our-work-7.jpg" alt="">
+                            <p class="portfolio__text icon-picture">
+                                CREATIVELY DESIGNED
+                                <span class="portfolio__desc">Lorem ipsum dolor sit</span>
+                            </p>
+                        </div>
+                        <div class="col-sm-6 m-0 p-0 text-center portfolio__photos">
+                            <img src="img/images/our-work-1.jpg" alt="">
+                            <p class="portfolio__text icon-picture">
+                                CREATIVELY DESIGNED
+                                <span class="portfolio__desc">Lorem ipsum dolor sit</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 m-0 p-0 text-center">
+                    <div class="row m-0">
+                        <div class="col-sm-6 m-0 p-0 text-center portfolio__photos hidden-xs-down">
+                            <img src="img/images/our-work-5.jpg" alt="">
+                            <p class="portfolio__text icon-picture">
+                                CREATIVELY DESIGNED
+                                <span class="portfolio__desc">Lorem ipsum dolor sit</span>
+                            </p>
+                        </div>
+                        <div class="col-sm-6 m-0 p-0 text-center">
+                            <div class="portfolio__photos">
+                                <img src="img/images/our-work-6.jpg" alt="">
+                                <p class="portfolio__text icon-picture">
+                                    CREATIVELY DESIGNED
+                                    <span class="portfolio__desc">Lorem ipsum dolor sit</span>
+                                </p>
+                            </div>
+                            <div class="portfolio__photos">
+                                <img src="img/images/our-work-2.jpg" alt="">
+                                <p class="portfolio__text icon-picture">
+                                    CREATIVELY DESIGNED
+                                    <span class="portfolio__desc">Lorem ipsum dolor sit</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </figure>
+        </section>
+
+        <!-- COMMENT SECTION -->
+        <section class="container-fluid mt-5">
+            <article class="container comments">
+                <div id="commentCarousel" class="carousel slide p-md-5" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <blockquote class="carousel-item mb-0 active">
+                            <div class="d-flex w-100 flex-column flex-md-row media ml-lg-5 mr-lg-5 pl-5 pr-5 align-items-center">
+                                <img src="img/photos/opinion-slide.png" alt="" class="d-none d-md-flex ml-1 mr-4">
+                                <div class="media-body">
+                                    <p class="comments__cite">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+                                    <h5 class="mt-0 comments__author">Joshua Earle</h5>
+                                </div>
+                            </div>
+                        </blockquote>
+                        <blockquote class="carousel-item mb-0">
+                            <div class="d-flex w-100 flex-column flex-md-row media ml-lg-5 mr-lg-5 pl-5 pr-5 align-items-center">
+                                <img src="img/photos/opinion-slide.png" alt="" class="d-none d-md-flex ml-1 mr-4">
+                                <div class="media-body">
+                                    <p class="comments__cite">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+                                    <h5 class="mt-0 comments__author">Joshua Earle</h5>
+                                </div>
+                            </div>
+                        </blockquote>
+                        <blockquote class="carousel-item mb-0">
+                            <div class="d-flex w-100 flex-column flex-md-row media ml-lg-5 mr-lg-5 pl-5 pr-5 align-items-center">
+                                <img src="img/photos/opinion-slide.png" alt="" class="d-none d-md-flex ml-1 mr-4">
+                                <div class="media-body">
+                                    <p class="comments__cite">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+                                    <h5 class="mt-0 comments__author">Joshua Earle</h5>
+                                </div>
+                            </div>
+                        </blockquote>
+                    </div>
+                    <a class="carousel-control-prev comments__left-arrow" href="#commentCarousel" role="button" data-slide="prev">
+                        <span class="comments__arrow-icon comments__arrow-icon--left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next comments__right-arrow" href="#commentCarousel" role="button" data-slide="next">
+                        <span class="comments__arrow-icon comments__arrow-icon--right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </article>
+        </section>
+
+        <!-- TEAM SECTION -->
+        <section class="container-flex wrapper--image-2">
+            <article class="container text-center article pt-5 pb-5">
+                <p class="article__decor">Who we are</p>
+                <h3 class="article__header">MEET OUR TEAM</h3>
+                <div class="row opinion pt-5">
+                    <div class="col-md-6">
+                        <div class="d-flex flex-column flex-md-row media mb-5 ml-2">
+                            <img src="img/photos/comments-1.png" alt="" class="d-none d-md-flex ml-1 mr-4">
+                            <div class="media-body">
+                                <h5 class="opinion__header">MATTHEW DIX</h5>
+                                <span class="opinion__desc">Graphic Design</span>
+                                <p class="opinion__cite">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex flex-column flex-md-row media mb-5 ml-2">
+                            <img src="img/photos/comments-2.png" alt="" class="d-none d-md-flex ml-1 mr-4">
+                            <div class="media-body">
+                                <h5 class="opinion__header">NICK KARVOUNIS</h5>
+                                <span class="opinion__desc">Graphic Design</span>
+                                <p class="opinion__cite">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row opinion">
+                    <div class="col-md-6">
+                        <div class="d-flex flex-column flex-md-row media mb-5 ml-2">
+                            <img src="img/photos/comments-3.png" alt="" class="d-none d-md-flex ml-1 mr-4">
+                            <div class="media-body">
+                                <h5 class="opinion__header">JAELLYNN CASTILLO</h5>
+                                <span class="opinion__desc">Graphic Design</span>
+                                <p class="opinion__cite">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex flex-column flex-md-row media mb-5 ml-2">
+                            <img src="img/photos/comments-4.png" alt="" class="d-none d-md-flex ml-1 mr-4">
+                            <div class="media-body">
+                                <h5 class="opinion__header">MIKE PETRUCCI</h5>
+                                <span class="opinion__desc">Graphic Design</span>
+                                <p class="opinion__cite">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- BLOG SECTION -->
+        <section id="blog" class="container-flex">
+            <article class="container text-center article pt-3 pb-3">
+                <p class="article__decor">Our stories</p>
+                <h3 class="article__header">LATEST BLOG</h3>
+                <div class="row mt-5 blog">
+
+                    <div class="col-lg-4">
+                        <img src="img/images/latest-blog-2.jpg" alt="" class="img-fluid blog__image">
+                        <span class="blog__date">12
+                            <span class="blog__month">Jan</span>
+                        </span>
+                        <h5 class="blog__header">
+                            Lorem ipsum dolor sit amet
+                        </h5>
+                        <p class="blog__content">
+                            Consectetur adipiscing elit, tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <div class="blog__icons">
+                            <span class="icon-eye">542</span>
+                            <span class="icon-commenting">17</span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <img src="img/images/latest-blog-3.jpg" alt="" class="img-fluid blog__image">
+                        <span class="blog__date">12
+                            <span class="blog__month">Jan</span>
+                        </span>
+                        <h5 class="blog__header">
+                            Lorem ipsum dolor sit amet
+                        </h5>
+                        <p class="blog__content">
+                            Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <div class="blog__icons">
+                            <span class="icon-eye">992</span>
+                            <span class="icon-commenting">42</span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <img src="img/images/latest-blog-1.jpg" alt="" class="img-fluid blog__image">
+                        <span class="blog__date">12
+                            <span class="blog__month">Jan</span>
+                        </span>
+                        <h5 class="blog__header">
+                            incididunt ut labore et dolore
+                        </h5>
+                        <p class="blog__content">
+                            Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <div class="blog__icons">
+                            <span class="icon-eye">1560</span>
+                            <span class="icon-commenting">98</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- MAP SECTION -->
+        <section id="map" class="container-fluid wrapper--image-3 justify-content-center map">
+            <h3 id="mapButton" class="map__header icon-location">OPEN MAP</h3>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="container footer pt-5">
+        <section class="row">
+
+            <!-- first col -->
+            <div id="contact" class="col-xl-5 d-flex flex-column justify-content-between">
+                <h2 class="footer__logo">MoGo</h2>
+                <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. </p>
+                <span class="footer__followers">
+                    <span class="footer__counter">15k</span> followers</span>
+                <div class="footer__social">
+                    Follow Us:
+                    <a href="#" class="footer__icons icon-facebook"></a>
+                    <a href="#" class="footer__icons icon-twitter"></a>
+                    <a href="#" class="footer__icons icon-instagram"></a>
+                    <a href="#" class="footer__icons icon-pinterest"></a>
+                    <a href="#" class="footer__icons icon-gplus"></a>
+                    <a href="#" class="footer__icons icon-youtube-play"></a>
+                    <a href="#" class="footer__icons icon-dribbble"></a>
+                    <a href="#" class="footer__icons icon-twitch"></a>
+                </div>
+                <form action="" class="footer__subscribe pb-4">
+                    <label for="email" class="footer__label">email:</label>
+                    <input type="text" class="footer__email" id="email" placeholder="Your Email...">
+                    <button class="footer__button" value="SUBSCRIBE">SUBSCRIBE</button>
+                </form>
+            </div>
+
+            <!-- second col -->
+            <div class="col-md d-flex flex-column justify-content-xl-between">
+                <h5 class="footer__header">BLOGS</h5>
+                <a href="#" class="d-flex flex-row media mb-4 mb-xl-0">
+                    <img src="img/images/footer-blog-1.jpg" alt="" class="d-flex mr-4">
+                    <div class="media-body">
+                        <p class="footer__content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                        </p>
+                        <span class="footer__date">Jan 9, 2016</span>
+                    </div>
+                </a>
+                <a href="#" class="d-flex flex-row media mb-4 mb-xl-0">
+                    <img src="img/images/footer-blog-2.jpg" alt="" class="d-flex mr-4">
+                    <div class="media-body">
+                        <p class="footer__content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                        </p>
+                        <span class="footer__date">Jan 9, 2016</span>
+                    </div>
+                </a>
+                <a href="#" class="d-flex flex-row media mb-4 mb-xl-0">
+                    <img src="img/images/footer-blog-3.jpg" alt="" class="d-flex mr-4">
+                    <div class="media-body">
+                        <p class="footer__content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                        </p>
+                        <span class="footer__date">Jan 9, 2016</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- third col -->
+            <div class="col-md d-flex flex-column justify-content-xl-between">
+                <h5 class="footer__header">INSTAGRAM (click image)</h5>
+                <figure class="m-0 text-center text-md-left">
+                    <img src="img/images/instagram-1.jpg" alt="" class="footer__instagram-photo" type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#modalImage-1">
+                    <img src="img/images/instagram-2.jpg" alt="" class="footer__instagram-photo" type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#modalImage-2">
+                    <img src="img/images/instagram-3.jpg" alt="" class="footer__instagram-photo" type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#modalImage-3">
+                    <img src="img/images/instagram-4.jpg" alt="" class="footer__instagram-photo" type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#modalImage-4">
+                    <img src="img/images/instagram-5.jpg" alt="" class="footer__instagram-photo" type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#modalImage-5">
+                    <img src="img/images/instagram-6.jpg" alt="" class="footer__instagram-photo" type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#modalImage-6">
+                    <img src="img/images/instagram-7.jpg" alt="" class="footer__instagram-photo" type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#modalImage-7">
+                    <img src="img/images/instagram-8.jpg" alt="" class="footer__instagram-photo" type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#modalImage-8">
+                    <img src="img/images/instagram-9.jpg" alt="" class="footer__instagram-photo" type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#modalImage-9">
+                </figure>
+                <p class="mt-2">
+                    <a href="#" class="footer__img-caption">View more photos</a>
+                </p>
+            </div>
+
+            <!-- Modal - LIGHTBOX FOR INSTAGRAM -->
+            <div class="modal fade" id="modalImage-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog lightbox" role="document">
+                    <div class="modal-content d-block">
+                        <button type="button" class="close lightbox__close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <img src="img/instagram/instagram-4.jpg" alt="" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalImage-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog lightbox" role="document">
+                    <div class="modal-content d-block">
+                        <button type="button" class="close lightbox__close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <img src="img/instagram/instagram-3.jpg" alt="" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalImage-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog lightbox" role="document">
+                    <div class="modal-content d-block">
+                        <button type="button" class="close lightbox__close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <img src="img/instagram/instagram-7.jpg" alt="" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalImage-4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog lightbox" role="document">
+                    <div class="modal-content d-block">
+                        <button type="button" class="close lightbox__close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <img src="img/instagram/instagram-8.jpg" alt="" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalImage-5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog lightbox" role="document">
+                    <div class="modal-content d-block">
+                        <button type="button" class="close lightbox__close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <img src="img/instagram/instagram-5.jpg" alt="" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalImage-6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog lightbox" role="document">
+                    <div class="modal-content d-block">
+                        <button type="button" class="close lightbox__close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <img src="img/instagram/instagram-1.jpeg" alt="" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalImage-7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog lightbox" role="document">
+                    <div class="modal-content d-block">
+                        <button type="button" class="close lightbox__close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <img src="img/instagram/instagram-2.jpg" alt="" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalImage-8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog lightbox" role="document">
+                    <div class="modal-content d-block">
+                        <button type="button" class="close lightbox__close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <img src="img/instagram/instagram-9.jpg" alt="" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalImage-9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog lightbox" role="document">
+                    <div class="modal-content d-block">
+                        <button type="button" class="close lightbox__close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <img src="img/instagram/instagram-6.jpg" alt="" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- description row -->
+        <div class="row mt-4">
+            <p class="footer__sign">© 2016 MoGo free PSD template by
+                <a href="#" class="footer__sign-red">Laaqiq</a>
+            </p>
+        </div>
+        <a class="scroll-button arrow-icon" href="#header" id="scrollTopButton"></a>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+    
+    <script src="js/scripts.min.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3LnCiRtFMdqo3xA_zb_DYxx0OdqMQOOU" async defer></script>
+</body>
+
+</html>
