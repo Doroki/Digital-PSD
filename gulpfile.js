@@ -65,7 +65,7 @@ gulp.task("concat", function () {
 
 
 gulp.task("imagemin", function(){
-    return gulp.src('dist/img/*', {
+    return gulp.src('dist/img/**/*', {
             base: 'dist'
         })
         .pipe(imagemin())
@@ -74,7 +74,7 @@ gulp.task("imagemin", function(){
 
 
 gulp.task("copy", function(){
-    return gulp.src(["src/css/**/*.css", "src/img/*", "src/fontello/*"], {
+    return gulp.src(["src/css/**/*.css", "src/img/**/*", "src/fontello/*"], {
         base: "src"
     })
     .pipe(gulp.dest("dist/"));
